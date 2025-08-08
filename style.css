@@ -1,0 +1,409 @@
+/* Reset dasar */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* App container untuk flexbox layout */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Toolbar */
+header {
+    flex: 0 0 auto; /* Don't grow or shrink */
+    background: #2c3e50;
+    color: white;
+    padding: 8px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    min-height: 34px; /* Explicit height */
+}
+
+header button {
+    background: #3498db;
+    border: none;
+    padding: 6px 12px;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+header button:hover {
+    background: #2980b9;
+}
+
+header span {
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+header input[type="text"] {
+    margin-left: auto;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+/* Layout utama */
+main {
+    flex: 1 1 auto; /* Grow to fill available space */
+    display: flex;
+    overflow: hidden;
+    min-height: 0; /* Important for Firefox */
+}
+
+/* Area mind map */
+#mindmap {
+    flex: 2;
+    background: rgb(249 249 237);
+    overflow: hidden;
+    position: relative;
+    min-width: 0; /* Allow shrinking */
+}
+
+/* Panel editor */
+#editorPanel {
+    flex: 1;
+    border-left: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+    max-width: 50%;
+    overflow: hidden;
+}
+
+#nodeTitle {
+    font-size: 16px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#editor {
+    flex: 1;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    min-height: 300px;
+}
+
+/* CKEditor specific styles */
+.cke_chrome {
+    border: 1px solid #ccc !important;
+}
+
+.cke_inner {
+    background: white;
+}
+
+.cke_contents {
+    height: 400px !important;
+}
+
+.cke_notifications_area {
+    display: none !important;
+}
+
+/* Table styles untuk CKEditor */
+.cke_editable table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.cke_editable table, 
+.cke_editable th, 
+.cke_editable td {
+    border: 1px solid #ddd;
+}
+
+.cke_editable th,
+.cke_editable td {
+    padding: 8px;
+    text-align: left;
+}
+
+.cke_editable th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Node mind map */
+
+
+.node text {
+    font-size: 12px;
+    fill: #2c3e50;
+    pointer-events: none;
+}
+
+.link {
+    fill: none;
+    stroke: #95a5a6;
+    stroke-width: 2px;
+}
+
+
+/* Node mind map - Basic styles */
+.node circle {
+    /* HAPUS fill: #3498db; - biarkan JavaScript yang set warna */
+    stroke-width: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.node circle:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+/* Selected node override */
+.node.selected circle {
+    /* Hapus fill dan stroke dari sini juga */
+    stroke-width: 4px !important;
+    filter: drop-shadow(0 0 8px rgba(255, 107, 107, 0.6));
+}
+
+
+
+
+/* Node states */
+.node.selected circle {
+    fill: #024ade;
+    stroke: #d35400;
+    stroke-width: 3px;
+}
+
+.node.collapsed circle {
+    fill: #bdc3c7;
+    stroke: #7f8c8d;
+}
+
+.node.drag-target circle {
+    stroke: #e74c3c !important;
+    stroke-width: 3px !important;
+}
+
+/* Search highlight dengan animation */
+@keyframes pulse-glow {
+    0%, 100% {
+        filter:
+            drop-shadow(0 0 3px rgba(255, 255, 0, 1))
+            drop-shadow(0 0 6px rgba(255, 0, 0, 0.8))
+            drop-shadow(0 0 12px rgba(255, 0, 0, 0.5));
+    }
+    50% {
+        filter:
+            drop-shadow(0 0 4px rgba(255, 255, 0, 1))
+            drop-shadow(0 0 8px rgba(255, 0, 0, 0.9))
+            drop-shadow(0 0 16px rgba(255, 0, 0, 0.6));
+    }
+}
+
+.node.search-match {
+    animation: pulse-glow 2s infinite;
+}
+
+/* Editor buttons */
+.editor-buttons {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.editor-buttons button {
+    flex: 1;
+    background: #27ae60;
+    border: none;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.editor-buttons button:hover {
+    background: #1e8449;
+}
+
+.editor-buttons button:nth-child(2) {
+    background: #2980b9;
+}
+
+.editor-buttons button:nth-child(2):hover {
+    background: #21618c;
+}
+
+.editor-buttons button:nth-child(3) {
+    background: #c0392b;
+}
+
+.editor-buttons button:nth-child(3):hover {
+    background: #922b21;
+}
+
+/* Unsaved changes indicator */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(230, 126, 34, 0.7);
+    }
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px 10px rgba(230, 126, 34, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(230, 126, 34, 0);
+    }
+}
+
+button.unsaved {
+    background-color: #ff4444;
+    color: white;
+    font-weight: bold;
+    animation: pulse 1.5s infinite;
+}
+
+/* Export buttons */
+button[onclick*="exportOutline"] {
+    background-color: #28a745;
+}
+
+button[onclick*="exportOutline"]:hover {
+    background-color: #218838;
+}
+
+button[onclick*="exportOutline"]:active {
+    background-color: #1e7e34;
+    transform: translateY(1px);
+}
+
+.export-loading {
+    opacity: 0.6;
+    cursor: not-allowed !important;
+    position: relative;
+}
+
+.export-loading::after {
+    content: " ⏳";
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    
+    #editorPanel {
+        min-width: auto;
+        max-width: 100%;
+        border-left: none;
+        border-top: 1px solid #ccc;
+    }
+    
+    .cke_contents {
+        height: 300px !important;
+    }
+    
+    header {
+        flex-wrap: wrap;
+    }
+    
+    header button {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}
+
+/* Debug styles - hapus setelah selesai */
+#mindmap {
+    border: 1px solid #ddd; /* Untuk melihat boundary */
+}
+
+
+
+/////////////////node coloring//////////////////
+
+
+
+/* Node mind map - Basic styles */
+.node circle {
+    cursor: pointer;
+    transition: all 0.3s ease;
+	stroke-dasharray: 5,5;
+}
+
+.node circle:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+	stroke-dasharray: 5, 5;
+
+}
+
+.node text {
+    font-size: 12px;
+    fill: #2c3e50;
+    pointer-events: none;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+/* Selected node override */
+.node.selected circle {
+    stroke-width: 4px !important;
+    filter: drop-shadow(0 0 8px rgba(255, 107, 107, 0.6));
+}
+
+/* Collapsed node - make it darker */
+.node.collapsed circle {
+    filter: brightness(0.7);
+    stroke-dasharray: 5,5;
+}
+
+/* Links dengan gradient */
+.link {
+    fill: none;
+    stroke: #bdc3c7;
+    stroke-width: 2px;
+    opacity: 0.6;
+}
+
+/* Color legend styles */
+.color-legend {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 12px;
+}
+
+.color-legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.color-legend-circle {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 8px;
+    border: 2px solid;
+}
+
+
+
+//////////////////end of node coloring///////////////////

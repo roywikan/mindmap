@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writers Mindmapper</title>
+    
+    <!-- Link ke CSS  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-container">
+    <header>
+		<button onclick="showShortcutsHelp()">Help (F1)</button>
+        <button onclick="newMindMap()">Blank</button>
+        <input type="file" id="fileInput" style="display:none" accept=".json" onchange="openMindMap(event)">
+        <button onclick="document.getElementById('fileInput').click()">Open JSON</button>
+        <button onclick="saveMindMap()">To Cache</button>
+        <button onclick="saveAsMindMap()">To .JSON</button>
+        <button onclick="exportOutline('txt')">To .TXT</button>
+        <button onclick="exportOutline('docx')">To .DOCX</button>
+        <span>Writers Mindmapper</span>
+		
+        <input type="text" id="searchInput" placeholder="Search node..." oninput="searchNode()">
+    </header>
+	
+	
+    <main>
+        <div id="mindmap"></div>
+        <div id="editorPanel">
+            <input type="text" id="nodeTitle" placeholder="Node Title">
+            <!-- Ganti div dengan textarea untuk CKEditor -->
+            <textarea id="editor"></textarea>
+            <div class="editor-buttons">
+                <button onclick="updateNodeContent()">Update Node</button>
+                <button onclick="addChildNode()">Add Child [Ctrl+A]</button>
+                <button onclick="deleteNode()">Delete Node [Delete]</button>
+            </div>
+        </div>
+    </main>
+</div>
+
+
+
+    <!-- PUSTAKA JAVASCRIPT -->
+    <!-- script src="https://d3js.org/d3.v7.min.js"></script -->
+	<script src="lib/d3.v7.min.js"></script>
+
+    
+	
+	
+	
+	<!-- Ganti script CKEditor dengan full build -->
+	<!-- script src="https://cdn.ckeditor.com/4.22.1/full/ckeditor.js"></script -->
+	<script src="lib/ckeditor/ckeditor.js"></script>
+	<script>CKEDITOR.replace('ckeditor', { 'versionCheck': false });</script>
+
+
+    
+    <!-- script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script -->
+	<script src="lib/FileSaver.min.js"></script>
+	
+    <!-- script src="https://cdn.jsdelivr.net/npm/docx@9.5.1/dist/index.iife.min.js"></script -->
+	<script src="lib/index.iife.min.js"></script>
+    
+    <!-- Script utama -->
+    <script src="script.js?v=124"></script>
+	<style>.cke_notifications_area {display: none !important;}</style>
+
+</body>
+</html>

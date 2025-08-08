@@ -1,0 +1,128 @@
+Buku Digital Test HTML to DOCX
+  Complete HTML Conversion Test BookTesting comprehensive HTML to DOCX conversion with all formatting elements
+
+  BAB 1: Text Formatting Dasar
+    1.1 Basic Text StylingIni adalah teks tebal (bold) dan ini miring (italic). Ada juga yang bergaris bawah dan dicoret.
+    Kombinasi formatting: Tebal, miring, dan bergaris bawah sekaligus.
+    1.2 Font Sizes dan ColorsTeks kecil abu-abu
+    Teks normal hijau
+    Teks besar orange
+    Teks sangat besar ungu
+    Teks dengan background kuning
+
+    1.1 RGB dan RGBA Colors
+      Testing Different Color Formats:RGB Red Color
+      RGBA Blue with transparency
+      RGBA Dark with high transparency
+      RGB Dark Gray
+      Hex Color
+      Named Color Green
+
+  BAB 2: Headers dan Struktur
+    Header Level 1 - Judul UtamaHeader Level 2 - Sub JudulHeader Level 3 - Sub Sub JudulHeader Level 4 - Minor HeadingHeader Level 5 - Smallest HeadingHeader Level 6 - Tiny HeadingSetelah semua header, ini adalah paragraf normal yang menjelaskan bahwa struktur heading harus dikonversi dengan ukuran font yang sesuai dan formatting yang benar.
+
+  BAB 3: Lists dan Numbering
+    Testing All List Types3.1 Ordered List (Numbered)Item pertama yang tebal dengan penjelasan yang menggunakan warna berbeda dan lebih panjang untuk testing.Item kedua dengan formatting yang juga punya italic text dan underlined text di dalamnya.Item ketiga kompleks dengan link berwarna biru di tengah kalimat.3.2 Unordered List (Bullets)Red bullet point dengan warnaBlue bold bullet pointGreen italic bullet dengan underline tambahanNormal bullet dengan highlighted text
+
+  BAB 4: Links dan References
+    Testing HyperlinksIni adalah link ke Google yang normal.
+    Ini link merah dan bold ke GitHub.
+    Email link: test@example.com
+    Link dalam kalimat: Silakan kunjungi Stack Overflow untuk bantuan programming, atau W3Schools untuk tutorial.
+
+  BAB 5: Paragraphs dan Line Breaks
+    Paragraph and Line Break TestingIni adalah paragraf pertama dengan teks yang cukup panjang untuk menguji bagaimana paragraf dihandle dalam konversi ke DOCX.
+    Paragraf kedua dengan 
+    line break di tengah kalimat.
+    Paragraf ketiga dengan beberapa
+    
+    line breaks berturut-turut.
+    Ini adalah div dengan styling khusus yang seharusnya dikonversi sebagai paragraf terpisah.Paragraf center dengan warna abu-abu italic
+
+  BAB 6: Special Characters dan Symbols
+    Special Characters & SymbolsTesting various symbols: © ® ™ € $ £ ¥ ¢
+    Mathematical symbols: ± × ÷ √ ∞ ≠ ≤ ≥ α β γ δ π θ Ω
+    Arrows: ← → ↑ ↓ ↔ ↕ ⇒ ⇔
+    Bullets and shapes: • ○ ◆ ◇ ■ □ ▲ △ ▼ ▽ ★ ☆
+    Quotation marks: "Double quotes" 'Single quotes' „German quotes” «French quotes»
+    Dashes: - – — (hyphen, en-dash, em-dash)
+    Bold symbols: ★ ♥ ♠ ♣ ♦
+
+  BAB 7: Code dan Monospace
+    Code Blocks and MonospaceInline code: console.log('Hello World')
+    Code dengan warna: function test() { return true; }
+    // Multi-line code block
+    function calculateSum(a, b) {
+        return a + b;
+    }
+    
+    const result = calculateSum(5, 3);
+    console.log('Result:', result);
+
+  BAB 8: Blockquotes dan Citations
+    Quotes and Citations"The best way to predict the future is to create it." - Peter DruckerNormal text after quote.
+    "Innovation distinguishes between a leader and a follower."
+    - Steve Jobs
+    Another paragraph with inline quotation in the middle.
+
+  BAB 9: Mixed Complex Content
+    Complex Mixed Content TestingIni adalah paragraf kompleks yang menggabungkan teks bold merah besar dengan italic biru dan link hijau.
+    Header dengan Background dan Multiple FormattingList item dengan background highlight dan pink linkItalic purple text dengan underline orange di dalam list itemcode snippet dalam list dengan triple formattingQuote kompleks dengan bold merah dan link biru di dalamnya.
+
+  BAB 10: Edge Cases dan Stress Test
+    Edge Cases & Stress TestingTeks sangat kecil dan transparan TEKS BESAR MERAH DENGAN SEMUA DECORATIONS kembali ke teks kecil
+    T e k s   d e n g a n   s p a c i n g   a n e h
+    White text on black background Black text on white with border
+    Nested formatting with multiple elements and linksLight red background dengan light green background dan light blue backgroundText dengan karakter khusus: àáâãäåæçèéêëìíîïðñòóôõöøùúûüýþÿ ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞŸ
+    Numbers dan symbols: 1234567890 !@#$%^&*()_+-=[]{}|;':",./<>?`~
+
+    10.1 Extreme Nesting Test
+      Level 1 Level 2 Level 3 Level 4 Level 5 Level 6 Level 7 Link
+      Quote with bold underline purple deep link
+      Bold list with italic underline highlighted blue text
+
+  BAB 11: Real-World Content Example
+    Panduan Memilih Partner HidupBerdasarkan Usia dan Fase KehidupanBagi Wanita Usia 17-21 Tahun: Fase Cari Identitas dan PetualanganDi usia ini, kamu mungkin masih SMA atau kuliah, fokusnya lebih ke eksplorasi diri dan bersenang-senang. Hubungan seringnya tentang perasaan dan pengalaman baru. Tapi, bukan berarti kamu nggak perlu punya standar, lho! Coba jawab ini:
+    Apa yang bikin kamu tertarik sama seseorang? Apakah karena dia lucu, perhatian, atau justru karena dia populer di sekolah/kampus? Refleksiin, apakah ketertarikanmu cuma karena "tren" atau beneran karena personality-nya.Seberapa penting cowok itu punya tujuan hidup? Kamu masih muda, tapi nggak ada salahnya mulai mikir pasangan yang punya visi, minimal nggak bikin kamu stuck di drama nggak jelas. Apa kamu butuh seseorang yang bikin kamu termotivasi?Apa kamu nyaman kalau harus bayar-bayar sendiri pas kencan? Di usia ini, banyak cowok yang mungkin juga masih minta duit sama ortu. Tapi, kalau kamu yang selalu nraktir, apa kamu oke? Atau kamu butuh pasangan yang setidaknya mau usaha buat bagi-bagi beban finansial?Catatan buat kamu: Jangan terlalu buru-buru cari yang "serius banget". Fokusnya cari pasangan yang bikin kamu tumbuh, bukan yang bikin dompetmu kering atau hati kamu capek.
+
+    11.1 Usia 22-27 Tahun: Fase Membangun Karir dan Stabilitas
+      Era Pencarian KeseimbanganDi fase ini, kamu sudah mulai kerja atau bahkan udah established di karir. Prioritasmu mulai berubah dari "having fun" ke "building future". Partner yang kamu cari juga harus bisa support ambisimu, bukan malah jadi beban.
+      Checklist Penting:Visi hidup yang sejalan: Dia punya rencana masa depan yang jelas? Mau tinggal di mana? Pengen punya anak kapan? Career goals-nya gimana?Financial responsibility: Bukan berarti dia harus kaya, tapi setidaknya financially literate. Bisa manage duit, nggak boros, dan punya tabungan.Emotional maturity: Drama queen atau king itu exhausting banget di usia segini. Cari yang bisa komunikasi dewasa dan solve masalah tanpa ribut terus."The right person will support your dreams, not compete with them."
+
+    11.2 Usia 28-35 Tahun: Fase Commitment Serius
+      Waktunya Serius atau PutusBiological clock mulai berdetak lebih kencang (especially buat perempuan). Di usia ini, hubungan yang nggak ada arah jelas itu waste of time. Kamu butuh partner yang ready untuk commitment jangka panjang.
+      Red Flags yang Harus Dihindari:Still "finding himself" di usia 30+ - If he doesn't know what he wants by now, when will he?Commitment phobia - Selalu ada excuse kenapa belum siap nikah, pindah bareng, atau next step lainnya.Financial disaster - Debt yang nggak terkendali, nggak punya tabungan, atau lifestyle yang nggak sustainable.Green Flags yang Worth It:
+      Clear about marriage timelineFinancially stable and responsibleGood relationship with familyShows up consistently in actions, not just words
+
+  BAB 12: Technical Formatting Stress Test
+    Advanced Formatting CombinationsMulti-layer formatting dengan transparansi
+    Column 1Column 2Data 1Link in tableParagraph dengan justify alignment, text indent, dan custom line height. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+  BAB 13: Final Complex Integration Test
+    🎯 ULTIMATE CONVERSION TEST 🎯This is the final boss level yang menggabungkan semua formatting sekaligus dalam satu paragraf yang crazy complex.
+    Quote dalam Quote Inception"Outer quote with bold orange text and nested link"
+    Inner quote dengan code dan colored text
+    Master list item dengan Nested bullet dengan inline code dan linkHighlighted purple textLarge crimson text dengan tiny gray transparent text di item yang sama🏆 SELAMAT! 🏆
+    Jika semua formatting di atas ter-convert dengan benar ke DOCX, maka sistem konversi HTML sudah sempurna!
+
+    13.1 Conversion Quality Checklist
+      ✅ Hal-hal yang Harus Berhasil Dikonversi:✅ Headers H1-H6 dengan ukuran yang tepat✅ Text colors RGB, RGBA, HEX, dan named colors✅ Background colors dan transparency✅ Font sizes dalam berbagai unit (pt, px, em)✅ Bold, italic, underline, strikethrough✅ Ordered dan unordered lists✅ Hyperlinks dengan styling✅ Nested formatting multiple levels✅ Blockquotes dengan styling✅ Line breaks dan paragraphs✅ Code blocks dengan monospace font✅ Special characters dan symbolsJika checklist ini semua ✅, maka HTML to DOCX conversion sudah enterprise-level quality!
+
+  Node Baru Claude
+    Test Table
+    
+    Nomor
+    			Nama
+    			Nilai
+    			Skor
+    
+    1
+    			Adi
+    			98
+    			100
+    
+    2
+    			Budi
+    			77
+    			90
+
